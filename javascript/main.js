@@ -112,7 +112,7 @@ function movePaddle(evt) {
     ball.velocityX = -ball.velocityX;
 }
 
-// function to update game (movement, position, score)
+// function to update game (movement, position, score)  - add score limit to game 
 function update() {
     
     // update score of players - if the ball touches the canvas on the players side, the computers score increases, if the ball touches the canvas on the computers side, the players score increases 
@@ -163,7 +163,7 @@ function update() {
 
         // everytime ball hits paddle, increase the speed
         ball.speed += 0.1;
-
+        
     }
     
 }
